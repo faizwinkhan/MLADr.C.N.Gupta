@@ -184,8 +184,8 @@ public class SecondActivity extends AppCompatActivity
             startActivity(new Intent(this,AboutUs.class));
         }
         else if(id==R.id.dmenu_contact){
-            //String page = getResources().getString(R.string.web_work_showcase);;
-            //loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+             String page = getResources().getString(R.string.web_contact);;
+             loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
         }
         else if(id==R.id.dmenu_exit){
             finishAffinity();

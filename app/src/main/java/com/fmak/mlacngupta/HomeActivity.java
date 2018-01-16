@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this,ComplaintActivity.class));
+                //Snackbar.make(view,"UNDER CONSTRUCTION",Snackbar.LENGTH_LONG).show();
             }
         });
 
@@ -103,13 +105,24 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         RelativeLayout menu8 = (RelativeLayout)findViewById(R.id.menu_live);
-        menu7.setOnClickListener(new View.OnClickListener(){
+        menu8.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-               // String page = getResources().getString(R.string.web_news);
-               // Intent open = new Intent(HomeActivity.this,SecondActivity.class);
-               // open.putExtra("page",page);
-               // startActivity(open);
+                String page = getResources().getString(R.string.facebook);
+                Intent open = new Intent(HomeActivity.this,SecondActivity.class);
+                open.putExtra("page",page);
+                startActivity(open);
+            }
+        });
+
+        RelativeLayout menu9 = (RelativeLayout)findViewById(R.id.menu_tweet);
+        menu9.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                String page = getResources().getString(R.string.tweeter);
+                Intent open = new Intent(HomeActivity.this,SecondActivity.class);
+                open.putExtra("page",page);
+                startActivity(open);
             }
         });
 

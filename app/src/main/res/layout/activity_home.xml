@@ -309,7 +309,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/menu_live"
+                android:id="@+id/menu_tweet"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="#AA2222"
@@ -324,7 +324,47 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginStart="20dp"
-                    app:srcCompat="@drawable/socia" />
+                    app:srcCompat="@drawable/tweetico" />
+
+                <TextView
+                    android:id="@+id/r9subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="GET CONNECTED"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r9subtv1"
+                    android:layout_alignStart="@+id/r9subtv1"
+                    android:layout_below="@+id/r9subtv1"
+                    android:text="हमसे जुड़ें (ट्वीटर)"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_live"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#3355EE"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/fbico" />
 
                 <TextView
                     android:id="@+id/r8subtv1"
@@ -344,7 +384,7 @@
                     android:layout_alignLeft="@+id/r8subtv1"
                     android:layout_alignStart="@+id/r8subtv1"
                     android:layout_below="@+id/r8subtv1"
-                    android:text="ऑनलाइन लोग"
+                    android:text="ऑनलाइन लोग (फेसबुक)"
                     android:textColor="#fff" />
             </RelativeLayout>
 

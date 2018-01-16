@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,7 +50,8 @@ public class ComplaintActivity extends AppCompatActivity {
                 String page = "http://prowessapps.in/complaint_app/upload_complaint_document_status.php?e="+pe;
                 Uri url = Uri.parse(page);
                 Intent open = new Intent(Intent.ACTION_VIEW,url);
-                startActivity(open);
+               // startActivity(open);
+                Snackbar.make(view,"UNDER CONSTRUCTION",Snackbar.LENGTH_LONG).show();
             }
         });
     }
