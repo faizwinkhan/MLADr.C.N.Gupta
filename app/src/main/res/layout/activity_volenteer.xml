@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bjpbg"
+    android:paddingTop="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingBottom="6dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/mydivider"
+            android:paddingTop="30dp"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:gravity="center_horizontal"
+                android:text="BE VOLUNTEER"/>
+
+            <RelativeLayout
+                android:id="@+id/volenteer_details"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:elevation="4dp"
+                android:outlineProvider="bounds"
+                android:background="#7BB31A">
+
+                <!-- 4169E1 ,  42C0FB,  FFA500,  008000,  37A42C, FF1212 -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/volenteer" />
+
+                <TextView
+                    android:id="@+id/r1subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:text="BENIFITS OF VOLUNTEER" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r1subtv1"
+                    android:layout_alignStart="@+id/r1subtv1"
+                    android:layout_below="@+id/r1subtv1"
+                    android:textColor="#fff"
+                    android:text="स्वयंसेवक के लाभ" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/volenteer_apply_form"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:elevation="4dp"
+                android:outlineProvider="bounds"
+                android:background="#D9534F">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/volenteer" />
+
+                <TextView
+                    android:id="@+id/r2subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:text="APPLY FOR VOLUNTEER" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r2subtv1"
+                    android:layout_alignStart="@+id/r2subtv1"
+                    android:layout_below="@+id/r2subtv1"
+                    android:textColor="#fff"
+                    android:text="स्वयंसेवक के लिए आवेदन फॉर्म" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

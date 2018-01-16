@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">MLA Dr. C.N. Gupta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_web_loader">WebLoader</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+
+    <string name="url_reg">http://mladrcngupta.com/webview/client.php/signup</string>
+    <string name="rsotp">http://mladrcngupta.com/webview/client.php/resendotp</string>
+    <string name="votp">http://mladrcngupta.com/webview/client.php/verifyotp</string>
+    <string name="mobilestatus">http://mladrcngupta.com/webview/client.php/mobilestatus</string>
+
+
+    <string name="web_complaint_track">http://prowessapps.in/gauravtripathi/complaint_track.php</string>
+    <string name="web_complaint_doc_status">http://prowessapps.in/gauravtripathi/upload_complaint_document_status.php?e=</string>
+    <string name="web_mcmr_list">http://prowessapps.in/gauravtripathi/leader_details.php</string>
+    <string name="web_nagar_biography">http://prowessapps.in/gauravtripathi/biography.php</string>
+    <string name="web_mission_karya">http://prowessapps.in/gauravtripathi/karyaniti.php</string>
+    <string name="web_facebook">https://www.facebook.com/missionnagarpalika.chhibramau.1</string>
+    <string name="web_facebook_karyayojna">https://www.facebook.com/nagarkagaurav/</string>
+
+
+
+    <string name="web_mcmr_add">http://mladrcngupta.com/webview/addleader.php</string>
+    <string name="web_volunteer_form">http://mladrcngupta.com/webview/volenteers.php</string>
+    <string name="web_complaint_reg">http://mladrcngupta.com/webview/complaints.php</string>
+    <string name="web_user_suggestion">http://mladrcngupta.com/webview/suggestion.php</string>
+    <string name="web_work_showcase">http://mladrcngupta.com/webview/showcase.php</string>
+    <string name="web_news">http://mladrcngupta.com/webview/news.php</string>
+    <string name="web_mission">http://mladrcngupta.com/webview/mission.php</string>
+    <string name="web_profile">http://mladrcngupta.com/webview/profile.php</string>
+
+
+
+
+    <string name="text_about">
+        "About Us.\n\n"
+
+        "Cloud Education is a Microsoft Authorized Education Partner company specialized in providing state-of-the-art technical training and certifications on all popular IT technologies available globally. The world class training at Cloud Education is offered through several innovative learning methods and delivery models to cater the unique requirements of a global customer base..\n\n"
+
+        "Services Offered By Us.\n\n"
+
+        "âœ“ Software Development : We provide the best and latest IT software training which helps all the fresher and the corporates to understand well and give them the knowledge to go hand in hand with the latest technologies.\n\n"
+        "âœ“ Instructor led campus : Cloud Education helps all the new instructors to get the best exposure to show their talent in right way.\n\n "
+        "âœ“ Online Live Training : We provide the high quality Online Live training offering in the industry. With our Online Live training courses, we try to provide the exact same learning experience as our traditional classroom based courses.\n\n"
+        "âœ“ Workshops and Placement Service : At Cloud Education, workshops are held to increase the understanding level because theoretical values are always not enough and workshops helps in getting the practical knowledge which results in better understanding. "
+    </string>
+    <string name="title_activity_notes">NotesActivity</string>
+    <string name="title_activity_referral">ReferralActivity</string>
+
+</resources>

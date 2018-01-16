@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dmenu_home"
+            android:icon="@drawable/home_image"
+            android:title="Home" />
+        <item
+            android:id="@+id/dmenu_swach"
+            android:icon="@drawable/city"
+            android:title="Swach Chappra Swach Bharat" />
+        <item
+            android:id="@+id/dmenu_meet"
+            android:icon="@drawable/socia"
+            android:title="Meet With MLA" />
+        <item
+            android:id="@+id/dmenu_shareapp"
+            android:icon="@drawable/share_it_image"
+            android:title="Share App" />
+        <item
+            android:id="@+id/dmenu_rateapp"
+            android:icon="@drawable/rate_image"
+            android:title="Rate App" />
+        <item
+            android:id="@+id/dmenu_about"
+            android:icon="@drawable/about_us_image"
+            android:title="About Us" />
+        <item
+            android:id="@+id/dmenu_contact"
+            android:icon="@drawable/contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/dmenu_exit"
+            android:icon="@drawable/exit_image"
+            android:title="Exit" />
+    </group>
+
+</menu>

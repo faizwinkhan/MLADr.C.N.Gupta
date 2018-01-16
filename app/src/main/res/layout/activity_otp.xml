@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bjpbg"
+    tools:context="com.fmak.mlacngupta.OTPActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/sms" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="We have sent you an access code\nvia SMS for Mobile Number verification" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
+        android:hint="OTP "
+        android:textScaleX="3"
+        android:inputType="number"
+        android:layout_marginTop="87dp"
+        android:background="@drawable/edittextbg"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sendotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Verify Code" />
+
+    <TextView
+        android:id="@+id/otpverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/tick"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:textColor="#00AA11"
+        android:textStyle="bold"
+        android:text="Verification DONE!!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/mobileno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="#FFF"
+        android:text="+91-0000000000"
+        android:layout_below="@+id/textView12"
+        android:layout_alignRight="@+id/otpverify"
+        android:layout_alignEnd="@+id/otpverify"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="re-send"
+        android:textColor="#0011AA"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:layout_alignBaseline="@+id/mobileno"
+        android:layout_alignBottom="@+id/mobileno"
+        android:layout_toRightOf="@+id/otp"
+        android:layout_toEndOf="@+id/otp" />
+</RelativeLayout>

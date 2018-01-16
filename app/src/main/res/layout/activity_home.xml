@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bjpbg"
+    android:paddingTop="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingBottom="6dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/mydivider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <RelativeLayout
+                android:id="@+id/menu_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#4169E1"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <!-- 4169E1 ,  42C0FB,  FFA500,  008000,  37A42C, FF1212 -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/complaint" />
+
+                <TextView
+                    android:id="@+id/r1subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="COMPLAINT MANAGEMENT"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r1subtv1"
+                    android:layout_alignStart="@+id/r1subtv1"
+                    android:layout_below="@+id/r1subtv1"
+                    android:text="शिकायत प्रबंधनं"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#42C0FB"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/suggestion" />
+
+                <TextView
+                    android:id="@+id/r2subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="SUGGESTION"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r2subtv1"
+                    android:layout_alignStart="@+id/r2subtv1"
+                    android:layout_below="@+id/r2subtv1"
+                    android:text="आपका सुझावं"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_showcase"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#FFA500"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/showcase" />
+
+                <TextView
+                    android:id="@+id/r3subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="WORK SHOWCASE"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r3subtv1"
+                    android:layout_alignStart="@+id/r3subtv1"
+                    android:layout_below="@+id/r3subtv1"
+                    android:text="कार्य प्रदर्शन"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_mcmr"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#D30A0A"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/aboutus" />
+
+                <TextView
+                    android:id="@+id/r4subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="Mission Chappra"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r4subtv1"
+                    android:layout_alignStart="@+id/r4subtv1"
+                    android:layout_below="@+id/r4subtv1"
+                    android:text="मिशन छपरा"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_volenteer"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#FF8A00"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/volenteer" />
+
+                <TextView
+                    android:id="@+id/r5subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="BE VOLUNTEER"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r5subtv1"
+                    android:layout_alignStart="@+id/r5subtv1"
+                    android:layout_below="@+id/r5subtv1"
+                    android:text="स्वयंसेवक बनें"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_profile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#008000"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/r6subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="MY PROFILE"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r6subtv1"
+                    android:layout_alignStart="@+id/r6subtv1"
+                    android:layout_below="@+id/r6subtv1"
+                    android:text="प्रोफाइल देखिये"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_news"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#A041D0"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/news" />
+
+                <TextView
+                    android:id="@+id/r7subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="NEWS and FEEDS"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r7subtv1"
+                    android:layout_alignStart="@+id/r7subtv1"
+                    android:layout_below="@+id/r7subtv1"
+                    android:text="समाचार और फ़ीड"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_live"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#AA2222"
+                android:elevation="4dp"
+                android:outlineProvider="bounds">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/socia" />
+
+                <TextView
+                    android:id="@+id/r8subtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginStart="90dp"
+                    android:text="PEOPLE LIVE"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/r8subtv1"
+                    android:layout_alignStart="@+id/r8subtv1"
+                    android:layout_below="@+id/r8subtv1"
+                    android:text="ऑनलाइन लोग"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

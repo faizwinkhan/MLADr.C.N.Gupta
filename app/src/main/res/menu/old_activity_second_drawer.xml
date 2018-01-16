@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dmenu_home"
+            android:icon="@drawable/home_image"
+            android:title="Home" />
+        <item
+            android:id="@+id/dmenu_complaint"
+            android:icon="@drawable/complaint"
+            android:title="Complaint Management" />
+        <item
+            android:id="@+id/dmenu_suggestion"
+            android:icon="@drawable/suggestion"
+            android:title="Suggestion" />
+        <item
+            android:id="@+id/dmenu_showcase"
+            android:icon="@drawable/showcase"
+            android:title="Work Showcase" />
+
+        <item
+                android:id="@+id/dmenu_mcmr"
+                android:icon="@drawable/aboutus"
+                android:title="M C M R" />
+            <item
+                android:id="@+id/dmenu_volenteer"
+                android:icon="@drawable/volenteer"
+                android:title="Be Volenteer" />
+            <item
+                android:id="@+id/dmenu_profile"
+                android:icon="@drawable/profile"
+                android:title="My Profile" />
+            <item
+            android:id="@+id/dmenu_news"
+            android:icon="@drawable/news"
+            android:title="NEWS and Feeds" />
+            <item
+                android:id="@+id/dmenu_aboutus"
+                android:icon="@drawable/about_us_image"
+                android:title="About Us" />
+        <item
+            android:id="@+id/dmenu_exit"
+            android:icon="@drawable/exit_image"
+            android:title="Exit" />
+    </group>
+
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_close"
+        android:icon="@drawable/form"
+        android:title="FORM" />
+
+
+    <item
+        android:id="@+id/navigation_reset"
+        android:icon="@drawable/reset"
+        android:title="RESET" />
+
+    <item
+        android:id="@+id/navigation_submit"
+        android:icon="@drawable/save"
+        android:title="SUBMIT" />
+
+
+
+</menu>
