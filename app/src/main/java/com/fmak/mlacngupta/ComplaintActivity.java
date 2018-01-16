@@ -45,13 +45,17 @@ public class ComplaintActivity extends AppCompatActivity {
         menu3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(ComplaintActivity.this);
-                String pe = sp.getString("email","");
-                String page = "http://prowessapps.in/complaint_app/upload_complaint_document_status.php?e="+pe;
-                Uri url = Uri.parse(page);
-                Intent open = new Intent(Intent.ACTION_VIEW,url);
-               // startActivity(open);
-                Snackbar.make(view,"UNDER CONSTRUCTION",Snackbar.LENGTH_LONG).show();
+                String page = getResources().getString(R.string.web_complaint_doc_status);
+                Intent open = new Intent(ComplaintActivity.this,SecondActivity.class);
+                open.putExtra("page",page);
+                startActivity(open);
+
+                //SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(ComplaintActivity.this);
+                //String pe = sp.getString("email","");
+                //Uri url = Uri.parse(page);
+                //Intent open = new Intent(Intent.ACTION_VIEW,url);
+                //startActivity(open);
+                //Snackbar.make(view,"UNDER CONSTRUCTION",Snackbar.LENGTH_LONG).show();
             }
         });
     }

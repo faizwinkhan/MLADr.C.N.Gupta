@@ -20,7 +20,7 @@
 
 
 
-    <string name="web_complaint_doc_status">http://prowessapps.in/gauravtripathi/upload_complaint_document_status.php?e=</string>
+
     <string name="web_mcmr_list">http://prowessapps.in/gauravtripathi/leader_details.php</string>
     <string name="web_nagar_biography">http://prowessapps.in/gauravtripathi/biography.php</string>
     <string name="web_mission_karya">http://prowessapps.in/gauravtripathi/karyaniti.php</string>
@@ -31,6 +31,7 @@
     <string name="web_volunteer_form">http://mladrcngupta.com/webview/volenteers.php</string>
     <string name="web_complaint_reg">http://mladrcngupta.com/webview/complaints.php</string>
     <string name="web_complaint_track">http://mladrcngupta.com/webview/ucomplaints.php</string>
+    <string name="web_complaint_doc_status">http://mladrcngupta.com/webview/cupload.php</string>
     <string name="web_user_suggestion">http://mladrcngupta.com/webview/suggestion.php</string>
     <string name="web_work_showcase">http://mladrcngupta.com/webview/showcase.php</string>
     <string name="web_news">http://mladrcngupta.com/webview/news.php</string>
