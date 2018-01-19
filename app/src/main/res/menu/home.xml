@@ -12,6 +12,10 @@
         android:title="Rate App" />
     <item
         android:id="@+id/about"
+        android:icon="@drawable/ic_mobile"
+        android:title="About App" />
+    <item
+        android:id="@+id/aboutus"
         android:icon="@drawable/about_us_image"
         android:title="About Us" />
     <item

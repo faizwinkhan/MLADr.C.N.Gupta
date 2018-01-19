@@ -37,9 +37,11 @@
     <string name="web_news">http://mladrcngupta.com/webview/news.php</string>
     <string name="web_mission">http://mladrcngupta.com/webview/mission.php</string>
     <string name="web_profile">http://mladrcngupta.com/webview/profile.php</string>
+    <string name="web_aboutus">http://mladrcngupta.com/webview/aboutus.php</string>
     <string name="web_contact">http://mladrcngupta.com/webview/contactus.php</string>
     <string name="facebook">https://www.facebook.com/drcngupta?ref=br_rs</string>
     <string name="tweeter">https://twitter.com/drcngupta</string>
+
 
 
 

@@ -1,6 +1,7 @@
 package com.fmak.mlacngupta;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -20,6 +21,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -104,24 +106,21 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+
         RelativeLayout menu8 = (RelativeLayout)findViewById(R.id.menu_live);
         menu8.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                String page = getResources().getString(R.string.facebook);
-                Intent open = new Intent(HomeActivity.this,SecondActivity.class);
-                open.putExtra("page",page);
+                Intent open = new Intent(HomeActivity.this,LiveActivity.class);
                 startActivity(open);
             }
         });
 
-        RelativeLayout menu9 = (RelativeLayout)findViewById(R.id.menu_tweet);
+        RelativeLayout menu9 = (RelativeLayout)findViewById(R.id.menu_connect);
         menu9.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                String page = getResources().getString(R.string.tweeter);
-                Intent open = new Intent(HomeActivity.this,SecondActivity.class);
-                open.putExtra("page",page);
+                Intent open = new Intent(HomeActivity.this,GetConnectActivity.class);
                 startActivity(open);
             }
         });
@@ -163,11 +162,20 @@ public class HomeActivity extends AppCompatActivity {
             //Copy App URL from Google Play Store.
             intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.fmak.mlacngupta"));
             startActivity(intent);
-        }else if(id == R.id.about)
+        }
+        else if(id == R.id.about)
         {
 
             startActivity(new Intent(this,AboutUs.class));
-        }else if(id == R.id.exit)
+        }
+        else if(id == R.id.aboutus)
+        {
+            String page = getResources().getString(R.string.web_aboutus);
+            Intent open = new Intent(HomeActivity.this,SecondActivity.class);
+            open.putExtra("page",page);
+            startActivity(open);
+        }
+        else if(id == R.id.exit)
         {
             onBackPressed();
         }

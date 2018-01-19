@@ -309,7 +309,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/menu_tweet"
+                android:id="@+id/menu_connect"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="#AA2222"
@@ -324,7 +324,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginStart="20dp"
-                    app:srcCompat="@drawable/tweetico" />
+                    app:srcCompat="@drawable/socia" />
 
                 <TextView
                     android:id="@+id/r9subtv1"
@@ -344,7 +344,7 @@
                     android:layout_alignLeft="@+id/r9subtv1"
                     android:layout_alignStart="@+id/r9subtv1"
                     android:layout_below="@+id/r9subtv1"
-                    android:text="हमसे जुड़ें (ट्वीटर)"
+                    android:text="हमसे जुड़ें"
                     android:textColor="#fff" />
             </RelativeLayout>
 
@@ -352,7 +352,7 @@
                 android:id="@+id/menu_live"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#3355EE"
+                android:background="#4169E1"
                 android:elevation="4dp"
                 android:outlineProvider="bounds">
 
@@ -364,7 +364,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginStart="20dp"
-                    app:srcCompat="@drawable/fbico" />
+                    app:srcCompat="@drawable/live" />
 
                 <TextView
                     android:id="@+id/r8subtv1"
@@ -384,7 +384,7 @@
                     android:layout_alignLeft="@+id/r8subtv1"
                     android:layout_alignStart="@+id/r8subtv1"
                     android:layout_below="@+id/r8subtv1"
-                    android:text="ऑनलाइन लोग (फेसबुक)"
+                    android:text="ऑनलाइन लोग"
                     android:textColor="#fff" />
             </RelativeLayout>
 

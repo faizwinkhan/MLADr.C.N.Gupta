@@ -285,42 +285,49 @@ public class SecondActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
         if(id==R.id.dmenu_home){
-            finishAffinity();
-            startActivity(new Intent(this,HomeActivity.class));
+            finish();
         }
-        else if(id==R.id.dmenu_swach){
-            //String page = getResources().getString(R.string.web_user_suggestion);
-            //loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        else if(id==R.id.dmenu_complaint){
+            finish();
+            startActivity(new Intent(this,ComplaintActivity.class));
         }
-        else if(id==R.id.dmenu_meet){
-            //String page = getResources().getString(R.string.web_work_showcase);;
-            //loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        else if(id==R.id.dmenu_suggestion){
+            String page = getResources().getString(R.string.web_user_suggestion);;
+            loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
         }
-        else if(id==R.id.dmenu_shareapp){
-            Intent share = new Intent(Intent.ACTION_SEND);
-            share.setType("text/plain");
-            share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-            share.putExtra(Intent.EXTRA_SUBJECT, "RCPL APP");
-            share.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.fmak.mlacngupta");
-            startActivity(Intent.createChooser(share, "Share RCPL App!!"));
+        else if(id==R.id.dmenu_showcase){
+            String page = getResources().getString(R.string.web_work_showcase);;
+            loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
         }
-        else if(id==R.id.dmenu_rateapp){
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.fmak.mlacngupta"));
-            startActivity(intent);
+        else if(id==R.id.dmenu_mission){
+            finish();
+            startActivity(new Intent(this,MCMRActivity.class));
         }
-        else if(id==R.id.dmenu_about){
-            startActivity(new Intent(this,AboutUs.class));
+        else if(id==R.id.dmenu_volenteer){
+            finish();
+            startActivity(new Intent(this,VolenteerActivity.class));
         }
-        else if(id==R.id.dmenu_contact){
-             String page = getResources().getString(R.string.web_contact);;
-             loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        else if(id==R.id.dmenu_profile){
+            String page = getResources().getString(R.string.web_profile);;
+            loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        }
+        else if(id==R.id.dmenu_news){
+            String page = getResources().getString(R.string.web_news);;
+            loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        }
+        else if(id==R.id.dmenu_connect){
+            finish();
+            startActivity(new Intent(this,GetConnectActivity.class));
+        }
+        else if(id==R.id.dmenu_live){
+            finish();
+            startActivity(new Intent(this,LiveActivity.class));
         }
         else if(id==R.id.dmenu_exit){
             finishAffinity();
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -342,33 +349,44 @@ public class SecondActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.shareapp) {
-            //Toast.makeText(this,"Kya Share kroge yr",Toast.LENGTH_LONG).show();
+        if(id==R.id.home){
+            finishAffinity();
+            startActivity(new Intent(this,HomeActivity.class));
+        }
+        else if(id==R.id.swach){
+            //String page = getResources().getString(R.string.web_user_suggestion);
+            //loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        }
+        else if(id==R.id.meet){
+            //String page = getResources().getString(R.string.web_work_showcase);;
+            //loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        }
+        else if(id==R.id.shareapp){
             Intent share = new Intent(Intent.ACTION_SEND);
             share.setType("text/plain");
             share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-
-            // Add data to the intent, the receiving app will decide
-            // what to do with it.
             share.putExtra(Intent.EXTRA_SUBJECT, "RCPL APP");
             share.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.fmak.mlacngupta");
-
             startActivity(Intent.createChooser(share, "Share RCPL App!!"));
-        }else if(id == R.id.rateapp) {
-            // Toast.makeText(this,"Kya Rate kroge yr",Toast.LENGTH_LONG).show();
-
+        }
+        else if(id==R.id.rateapp){
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            //Copy App URL from Google Play Store.
             intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.fmak.mlacngupta"));
             startActivity(intent);
-        }else if(id == R.id.about)
-        {
-
+        }
+        else if(id==R.id.about){
             startActivity(new Intent(this,AboutUs.class));
-        }else if(id == R.id.exit)
-        {
-            onBackPressed();
+        }
+        else if(id==R.id.contact){
+            String page = getResources().getString(R.string.web_contact);;
+            loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        }
+        else if(id==R.id.aboutus){
+            String page = getResources().getString(R.string.web_aboutus);;
+            loadWebPage(page+"?n="+pn+"&m="+pm+"&e="+pe);
+        }
+        else if(id==R.id.exit){
+            finish();
         }
 
         return super.onOptionsItemSelected(item);

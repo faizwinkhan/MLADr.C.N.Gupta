@@ -39,6 +39,8 @@
             android:name=".AboutUs"
             android:screenOrientation="portrait" />
         <activity android:name=".ComplaintActivity" />
+        <activity android:name=".GetConnectActivity" />
+        <activity android:name=".LiveActivity" />
         <activity android:name=".VolenteerActivity" />
         <activity android:name=".ErrorActivity" />
         <activity android:name=".AboutVolunteer" />

@@ -3,6 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_image"
+        android:title="HOME" />
+    <item
+        android:id="@+id/swach"
+        android:icon="@drawable/city"
+        android:title="Swach Chappra Swach Bharat" />
+    <item
+        android:id="@+id/meet"
+        android:icon="@drawable/name"
+        android:title="Meet With MLA" />
+    <item
+        android:id="@+id/contact"
+        android:icon="@drawable/ic_mobile"
+        android:title="Contact Us" />
+    <item
         android:id="@+id/shareapp"
         android:icon="@drawable/share_it_image"
         android:title="Share App" />
@@ -12,6 +28,10 @@
         android:title="Rate App" />
     <item
         android:id="@+id/about"
+        android:icon="@drawable/ic_mobile"
+        android:title="About App" />
+    <item
+        android:id="@+id/aboutus"
         android:icon="@drawable/about_us_image"
         android:title="About Us" />
     <item

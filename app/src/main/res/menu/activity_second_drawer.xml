@@ -6,30 +6,52 @@
             android:id="@+id/dmenu_home"
             android:icon="@drawable/home_image"
             android:title="Home" />
+
         <item
-            android:id="@+id/dmenu_swach"
-            android:icon="@drawable/city"
-            android:title="Swach Chappra Swach Bharat" />
+            android:id="@+id/dmenu_complaint"
+            android:icon="@drawable/complaint"
+            android:title="Complain Management" />
+
         <item
-            android:id="@+id/dmenu_meet"
+            android:id="@+id/dmenu_suggestion"
+            android:icon="@drawable/suggestion"
+            android:title="Suggestion" />
+
+        <item
+            android:id="@+id/dmenu_showcase"
+            android:icon="@drawable/showcase"
+            android:title="Work Showcase" />
+
+        <item
+            android:id="@+id/dmenu_mission"
+            android:icon="@drawable/aboutus"
+            android:title="Mission Chappra" />
+
+        <item
+            android:id="@+id/dmenu_volenteer"
+            android:icon="@drawable/volenteer"
+            android:title="Be Volunteer" />
+
+        <item
+            android:id="@+id/dmenu_profile"
+            android:icon="@drawable/profile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/dmenu_news"
+            android:icon="@drawable/news"
+            android:title="News and Feeds" />
+
+        <item
+            android:id="@+id/dmenu_connect"
             android:icon="@drawable/socia"
-            android:title="Meet With MLA" />
+            android:title="Get Connect" />
+
         <item
-            android:id="@+id/dmenu_shareapp"
-            android:icon="@drawable/share_it_image"
-            android:title="Share App" />
-        <item
-            android:id="@+id/dmenu_rateapp"
-            android:icon="@drawable/rate_image"
-            android:title="Rate App" />
-        <item
-            android:id="@+id/dmenu_about"
-            android:icon="@drawable/about_us_image"
-            android:title="About Us" />
-        <item
-            android:id="@+id/dmenu_contact"
-            android:icon="@drawable/contact"
-            android:title="Contact Us" />
+            android:id="@+id/dmenu_live"
+            android:icon="@drawable/live"
+            android:title="People Live" />
+
         <item
             android:id="@+id/dmenu_exit"
             android:icon="@drawable/exit_image"

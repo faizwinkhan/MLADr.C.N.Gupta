@@ -34,7 +34,7 @@
         android:textStyle="bold"
         android:textSize="17dp"
         android:textColor="@color/colorAccent"
-        android:text="MLA Dr. C.N. Gupta APP" />
+        android:text="About App" />
 
     <TextView
         android:id="@+id/textView5"
